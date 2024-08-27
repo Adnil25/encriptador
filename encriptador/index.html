@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style.css">
+</html>
+
+<header class="header">
+
+    <img class="logo_imagen" src="./asset/a.png" alt="Logo Alura" >
+
+</header>
+
+ <body>
+  <main class="cuerpo">
+
+    <section class="cuerpo-main">
+         <textarea id="textoUsuario" class="texto-usuario"  placeholder="INGRESE EL TEXTO AQUI..." ></textarea><br>
+           
+         <div class="advertencia">
+             <label > 
+                <img class="advertencia_imagen" src="./asset/warning.jpg" alt="Logo Alura" >
+                 Solo letras minusculas y sin acentos.
+             </label>
+            </div>
+
+        <div class="botonesEncriptar">
+
+            <button id="botonEncriptar" class="texto-boton1"onclick="encriptarTexto()" class="botonEn">ENCRIPTAR</button>
+
+            <button id="botonDesencriptar" class="texto-boton2" onclick="desencriptarTexto();"  class="botonDes"> DESENCRIPTAR </button>
+        </div>
+
+    </section>  
+    <section class="texto-salida">
+        <div class="mensaje-salida">            
+            <img id="imagenNula" class="nulo_imagen" src="./asset/buscar.png" alt="Mensaje no encontrado">
+               <p id="mensajeNulo" class="advertencia1"> Ningun mensaje fue encontrado</p>       
+               <p id="salidaTextoEncriptado"  class="salida"></p> 
+        </div>   
+            <div>         
+              <button id="botonCopiar" class="texto-boton1" onclick="copiarTexto()" class="botonDes" style="display:none;"> COPIAR</button>
+            </div> 
+        </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Creado por Ing. Linda Stephanie Wiley del Canto</strong> </p> 
+</footer>
+
+    <script src="app.js"></script>
+
+ </body>
+</html>

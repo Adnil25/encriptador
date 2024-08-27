@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --color-primario: #e5e5e5;
+    --color-secundario: #1E2A5E;
+    --color-terciario: #aab2d5;
+    --color-cuarto: #ced4da;
+    --color-hover:#FF9A00;
+
+    --fuente-josefin: "Josefin Sans", sans-serif;
+   /* --fuente-krona: "Krona One", sans-serif;*/
+}
+
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 6%; 
+    gap: 1px;    
+}
+
+.logo_imagen{
+    width: 5%; /* Ajusta el ancho al 5% del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+textarea::placeholder {
+   
+    font-family:  var(--fuente-josefin);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-secundario); /* Cambia el color del texto del placeholder */
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.texto-usuario{
+    background-color: var(--color-primario);
+    padding: 150px 200px;
+    border-radius: 24px;
+    border: none;
+    font-family:  var(--fuente-josefin);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+        
+}
+
+.advertencia{
+    padding: 2% 50px ;
+    color: var(--color-secundario);
+    font-family:  var(--fuente-josefin);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.advertencia_imagen{    
+    width: 3%; /* Ajusta el ancho al 3% de  la imagen de advertencia*/
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.botonesEncriptar{
+    display: flex;
+    padding: 1% 50px;      
+    align-items: center;
+    gap: 32px;
+}
+
+.texto-boton1{
+    padding: 20px 90px;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-family:  var(--fuente-josefin);
+    font-size: 0.87rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 24px;
+    gap: 8px;
+}
+.texto-boton1:hover{
+    background-color: var(--color-hover);
+}
+.texto-boton2{
+    padding: 20px 75px;
+    background-color: var(--color-cuarto);
+    color: var(--color-secundario);
+    font-family:  var(--fuente-josefin);
+    font-size: 0.87rem;
+    border-radius: 24px;
+    border: 1px solid var(--color-secundario);
+    gap: 8px;
+}
+.texto-boton2:hover{
+    background-color: var(--color-hover);
+}
+
+.texto-salida{
+    display: flex;
+    padding: 0% 150px 9px;
+    justify-content: space-between;
+    flex-direction: column ;
+    align-items: center;
+    gap: 32px;
+}
+
+.mensaje-salida{
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    justify-content: space-between;
+    flex-direction: column ;
+    align-items: center;
+    border-radius: 24px;
+    background-color: var(--color-terciario);
+}
+
+.nulo_imagen{
+
+    width: 150%; /* Ajusta el ancho al 80% del logo */
+    height: auto; /* Mantiene la proporción de la imagen */
+        
+}
+
+
+.advertencia1{
+    padding: 2% 50px ;
+    color: var(--color-secundario);
+    align-items: center;
+    font-family:  var(--fuente-josefin);
+    font-size: .85rem;
+    font-weight: 400;
+}
+
+.salida{
+    background-color: var(--color-terciario);
+    padding: 60px 50px;
+    border-radius: 24px;
+    border: none;
+    align-items: center;
+    font-family:  var(--fuente-josefin);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+
+
+
+.footer{
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-family:  var(--fuente-josefin);
+    font-size: 1rem;
+    font-weight: 400;
+ }
+
+ @media (max-width:1200px){
+
+    .header{
+        padding: 3%;
+        justify-content: center;
+    }
+         
+    .cuerpo{
+        width: auto;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .texto-usuario{
+        width: auto;
+    }
+
+    .botonesEncriptar{
+        width: auto;
+        justify-content: center;
+    }
+    
+    .cuerpo-main{
+    
+    width: auto;
+    }
+}
+
+@media (max-width:700px){
+
+    .header{
+        padding: 3%;
+        justify-content: center;
+    }
+         
+    .cuerpo{
+        width: auto;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .botonesEncriptar{
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .cuerpo-main{
+    
+    width: auto;
+    }
+}
+    
+    
+
